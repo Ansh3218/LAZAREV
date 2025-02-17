@@ -1,0 +1,312 @@
+/* // Navbar Css // */
+
+.Section-container-1 {
+  height: auto;
+  width: 100%;
+  padding: 0 1.5vw;
+}
+.logo {
+  font-size: 1.7rem;
+  letter-spacing: 0.1vw;
+  height: 2vw;
+}
+.Sublink {
+  position: relative;
+}
+.Sublink > a {
+  padding: 0.9rem 1.8rem;
+  border-radius: 30rem;
+  transition: 0.3s ease-in-out all;
+}
+.Sublink > a:hover {
+  background: #3c3c3c;
+}
+.Sublink > a span {
+  padding-left: 1rem;
+}
+.root{
+  position: relative;
+  min-height: 100vh;
+}
+.Navbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1rem 3rem;
+  left: 0;
+  z-index: 90000;
+  text-transform: uppercase;
+  background-color: #111111;
+}
+.menu-bars{
+  display: none;
+}
+.menu-bars img{
+  width: 2.3rem;
+  filter: invert(1);
+  cursor: pointer;
+  position: absolute;
+}
+.barsicon{
+  font-size: 2.5rem;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.Navbar > ul {
+  display: flex;
+  align-items: baseline;
+  gap: 3vw;
+}
+.Sublink-Ul {
+  background: #fffffff4;
+  color: black;
+  padding: 0 1.5vw;
+  border-radius: 15px;
+  margin-top: 1.1rem;
+  text-transform: capitalize;
+  height: 0px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+.Sublink-Ul li {
+  font-size: 0.85rem;
+  padding: 0.4rem;
+}
+.Sublink-Ul li,
+hr {
+  visibility: hidden;
+  transform: translateY(40px);
+  opacity: 0;
+}
+nav ul li {
+  list-style: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.NavUl-Container{
+  max-height: 0px;
+  transition: 1s ease-in all;
+}
+.NavUl-Container > li:nth-last-child(-n + 4):hover {
+  color: green;
+  transition: color 0.3s ease;
+  cursor: pointer;
+
+}
+.lets-btn {
+  height: 2.8rem;
+  width: 10rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  cursor: pointer;
+}
+
+.lets-btn::before {
+  content: "";
+  background-color: #0da34e;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10rem;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  transition: 0.5s ease-in-out all;
+  display: flex;
+}
+.lets-btn:hover::before {
+  right: 0;
+  width: 30%;
+}
+
+#LetPen {
+  font-size: 0.8rem;
+}
+.lets-btn > a {
+  color: #fff;
+  text-decoration: none;
+  z-index: 1;
+  transition: 1s;
+}
+.lets-btn:hover > a {
+  color: #0da34e;
+  margin-right: 1.3vw;
+}
+
+/* // Front Heading Css // */
+
+.front-heading {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+.front-heading h5 {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+.front-heading h5 span:nth-child(1) {
+  color: #0da34e;
+}
+.front-heading h5 span:nth-child(2) {
+  color: #0da34e;
+  text-transform: lowercase;
+}
+.front-heading h5 span:nth-child(3) {
+  color: #0da34e;
+  text-transform: lowercase;
+}
+.front-heading h1 {
+  font-size: 6rem;
+  padding: 2vw 0;
+}
+
+/* // Video Css // */
+
+.video-container {
+  display: flex;
+  padding: 0 3rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.video-container video {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.cursor {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background-color: #0da34e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-out;
+  pointer-events: none;
+  z-index: 3333;
+}
+#cursor-arrow {
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media only screen and (max-width: 1024px) {
+  .Section-container-1 nav {
+    padding: 1rem 2rem;
+  }
+  .front-heading h5 {
+    font-size: 2vw;
+  }
+  .front-heading h1 {
+    font-size: 8vw;
+    padding: 5vw 0;
+  }
+  .button > button {
+    padding: 1.4vw 5vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .front-heading h1 {
+    font-size: 8vw;
+    padding: 2vw 0;
+  }
+  .front-heading {
+    align-items: flex-start;
+    padding: 10vw 10vw 3vw 7vw;
+  }
+  .front-heading h5 {
+    font-size: 2.5vw;
+  }
+  .video-container {
+    padding: 0 2rem;
+}
+  .video-container video {
+    border-radius: 1rem;
+}
+.NavUl-Container {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  background-color: #0f0f0f;
+  padding: 0 3rem;
+  opacity: 0;
+}
+.NavUl-Container li{
+  padding: 1rem 0;
+  font-size: 8vw;
+}
+.NavUl-Container li>a:hover{
+  background-color: transparent;
+  color: #0da34e;
+}
+.Sublink>a{
+  padding: 0;
+}
+.Sublink>a>span>i{
+  display: none;
+}
+.menu-bars{
+  display: block;
+}
+.lets-btn {
+  display: none;
+}
+.Sublink-Ul{
+  display: none;
+}
+}
+
+@media only screen and (max-width: 524px) {
+  .front-heading {
+    padding: 10vw 0vw 0vw 3vw;
+  }
+  .front-heading h1 {
+    font-size: 11vw;
+    padding: 1rem 0;
+  }
+  .front-heading h5 {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .front-heading h1 {
+    padding: 4rem 0;
+  }
+  .video-container {
+    padding: 0 0.5rem;
+}
+.front-heading h1 {
+  font-size: 12vw;
+  padding: 2rem 0;
+}
+.front-heading h5 {
+  font-size: 4.5vw;
+}
+}

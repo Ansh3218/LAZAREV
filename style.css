@@ -1,0 +1,58 @@
+@font-face {
+  font-family: Neue;
+  src: url("./src/Assets/Fonts/NeueHaasDisplayBlack.ttf");
+}
+
+@font-face {
+  font-family: NeueMd;
+  src: url("./src/Assets/Fonts/NeueHaasDisplayMediu.ttf");
+}
+
+@font-face {
+  font-family: NeueRoman;
+  src: url("./src/Assets/Fonts/NeueHaasDisplayRoman.ttf");
+}
+@font-face {
+  font-family: NeueThin;
+  src: url("./src/Assets/Fonts/NeueHaasDisplayThin.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #111111;
+  color: aliceblue;
+  height: auto;
+  overflow-y: hidden;
+}
+.logo,.idea-con1>h1{
+  font-family: Neue;
+}
+.Section-container-1,
+.left-heading > h1,.seecase,
+.box-text .money-label,
+nav,
+nav ul li,.seeContent button,
+.front-heading h1,.section-part-1>h1,
+.cursor-content,
+.client-heading h1:nth-child(1),.footer-ul-container h5,.footer-top-right a,.footer-top-part>h1,.section-7-content>h1,.content>h2,.label-box>h1,
+.button button {
+  font-family: NeueMd;
+}
+.front-heading,
+.client-heading h1:nth-child(2),.content-8-left-top h5{
+  font-family: NeueThin;
+}
+.box-text,
+.box-text .money-label p:nth-child(3),.bottom-footer,.content-8-left-bottom p,.section-7-content-2>p,.idea-con2>p,.label-box,.content>p, span>h1,.right-heading > p,.right-heading > h4,.footer-ul-container li,.footer-top-right h5,.our-social-account a,.section-part-1>p,.content-8-left-top h1{
+  font-family: NeueRoman;
+}
+
+.root {
+  min-height: 100vh;
+  overflow: hidden;
+  will-change: transform;
+}

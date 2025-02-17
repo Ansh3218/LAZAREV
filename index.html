@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <link rel="stylesheet" href="./src/Components/Section-1/Section_1.css" />
+  <link rel="stylesheet" href="./src/Components/Section-2/Section_2.css" />
+  <link rel="stylesheet" href="./src/Components/Section-3/Section_3.css" />
+  <link rel="stylesheet" href="./src/Components/Section-4/Section_4.css" />
+  <link rel="stylesheet" href="./src/Components/Section-5/Section_5.css" />
+  <link rel="stylesheet" href="./src/Components/Section-6/Section_6.css" />
+  <link rel="stylesheet" href="./src/Components/Section-7/Section_7.css" />
+  <link rel="stylesheet" href="./src/Components/Section-8/Section_8.css" />
+  <link rel="stylesheet" href="./src/Components/Section-9/Section_9.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="Navbar-container">
+  <nav class="Navbar">
+    <h5 class="logo">LAZAREV.</h5>
+    <ul class="NavUl-Container">
+      <li class="Sublink">
+        <a href="#">
+          What we do
+          <span>
+            <i id="SublinkIcon" class="fa-solid fa-chevron-up"></i>
+          </span>
+        </a>
+        <ul class="Sublink-Ul">
+          <li style="padding-top: 3rem">🔥AI & ML</li>
+          <li>Fintech</li>
+          <li>Web3</li>
+          <li>Edtech</li>
+          <li>Logistics</li>
+          <hr style="margin: 0.5rem" />
+          <li>Healthcare</li>
+          <li>Enterprise</li>
+          <li>Real Estate</li>
+          <li>Legal Tech</li>
+          <li>Ad/Marktech</li>
+          <hr style="margin: 0.5rem" />
+          <li>Media/Content</li>
+          <li>Travel & Event</li>
+          <li>E-commerce</li>
+          <li>Non-Profit</li>
+          <li>Websites</li>
+        </ul>
+      </li>
+      <li>Cases</li>
+      <li>Outcomes</li>
+      <li>news</li>
+      <span class="lets-btn">
+        <a href="#">Lets Talk</a>
+        <i class="fa-solid fa-pen" id="LetPen"></i>
+      </span>
+    </ul>
+    <div class="menu-bars">
+      <img class="togglemenu" onclick="toggleMenu()" src="./src/Assets/Images/bars.png">
+      <i class="fa-solid fa-xmark barsicon" onclick="toggleMenu()"></i>
+    </div>
+  </nav>
+</div>
+  <div class="root" data-scroll-container>
+    <!-- <div.section-7-content>h1 {
+    font-size: 5vw;
+    padding-left: 10vw;
+} class="cursor"></div> -->
+    <section class="Section-container-1" data-scroll-container>
+      <div class="front-heading">
+        <h5>
+          AI + Product Design Agency /<span>/</span><span>/</span> San
+          Francisco
+        </h5>
+        <h1>
+          UX-First Design Agency <br />
+          for B2B + AI Companies
+        </h1>
+        <h5>
+          We lanch <span>MVPs</span> redefine <span>existing products</span> &
+          continously dive into <span>customer development</span>
+        </h5>
+      </div>
+      <div class="video-container">
+        <video src="./src/Assets/Video/intro.mp4" loop autoplay muted></video>
+        <div class="cursor">
+          <i class="fa-solid fa-arrow-right" id="cursor-arrow"></i>
+        </div>
+      </div>
+    </section>
+    <section data-scroll class="Section-container-2">
+      <div class="part-1">
+        <div class="review-box box-1">
+          <video class="video" src="./src/Assets/Video/money-vp9-chrome.webm" muted></video>
+          <div class="box-text">
+            <p class="count">/ 01</p>
+            <span class="money-label">
+              <p>$500M+</p>
+              <br />
+              <p>
+                in funding secured <br />
+                for our clients
+              </p>
+            </span>
+          </div>
+        </div>
+        <div class="review-box box-2">
+          <video class="video" src="./src/Assets/Video/awards-vp9-chrome.webm" muted></video>
+          <div class="box-text">
+            <p class="count">/ 02</p>
+            <span class="money-label">
+              <p>150+</p>
+              <br />
+              <p>
+                Awards backing<br />
+                our excellence
+              </p>
+            </span>
+          </div>
+        </div>
+        <div class="review-box box-3">
+          <video class="video" src="./src/Assets/Video/SF-vp9-chrome.webm" muted></video>
+          <div class="box-text">
+            <p class="count">/ 03</p>
+            <span class="money-label">
+              <p>2018</p>
+              <br />
+              <p>
+                Founded, 9 years<br />
+                of experience
+              </p>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="part-2">
+        <div class="review-box-2 box-4">
+          <div class="box-text">
+            <p class="count">/04</p>
+            <span class="money-label">
+              <p>San Francisco</p>
+              <br />
+              <p>Based in heart of AI</p>
+            </span>
+          </div>
+        </div>
+        <div class="review-box-2 box-5">
+          <div class="box-text">
+            <p class="count">/05</p>
+            <span class="money-label">
+              <p>All-in-One Solution</p>
+              <br />
+              <p>
+                From user-research to scalable design systems <br />
+                we've got you covered
+              </p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-scroll class="Section-container-3">
+      <div class="client-heading">
+        <h1>Our Clients</h1>
+        <h1>
+          Whether you're an AI startup aiming for Series D or an established
+          brand seeking a digital transformation, our award-winning team will
+          take your user-experience to the next level
+        </h1>
+        <div class="brand-container">
+          <div class="shopify">
+            <img src="./src/Assets/Images/shopify.png" alt="shopify" />
+            <h1>
+              We enhanced the UX for advanced Shopify analytics, helping Peel
+              raise $5M and Leading to its acquisition by Shopify
+            </h1>
+          </div>
+          <div class="shopify">
+            <img src="./src/Assets/Images/Boeing.png" alt="Boeing" />
+            <h1>
+              Stremlining Boeing's blueprint approval process, we optimized
+              and simplified company-wide procedures.
+            </h1>
+          </div>
+          <div class="shopify">
+            <img src="./src/Assets/Images/blades.png" alt="Blade" />
+            <h1>
+              Supporting Blade's marketing activities in the US and Europe, we
+              boosted their market presence and engagement.
+            </h1>
+          </div>
+          <div class="shopify">
+            <img src="./src/Assets/Images/hp.png" alt="Hp" />
+            <h1>
+              We transformed internal communication and onboarding at Heweltt
+              Packard by creating a series of engaging motion reels, making
+              the training process more effective.
+            </h1>
+          </div>
+          <div class="shopify">
+            <img src="./src/Assets/Images/Vt.png" alt="Vt" />
+            <h1>
+              Designed an AI+News platform for content company founded by
+              Partric Bet-David.
+            </h1>
+          </div>
+          <div class="shopify">
+            <img src="./src/Assets/Images/corel.png" alt="corel" />
+            <h1>
+              Improving UX on Corel Draw's landing pages, we enhanced user
+              experience and engagement.
+            </h1>
+          </div>
+          <div class="shopify">
+            <img src="./src/Assets/Images/Abu.png" alt="Abu" />
+            <h1>
+              Creating a new learning experience for Abu Dhabi University, we
+              drove educational innovation and engagement.
+            </h1>
+          </div>
+          <div class="shopify">
+            <img src="./src/Assets/Images/merkle.png" alt="merkle" />
+            <h1>
+              Designing digital campaigns for Merkle, we attracted more
+              customers and drove engagement.
+            </h1>
+          </div>
+          <div class="shopify">
+            <img src="./src/Assets/Images/sopraBanking.png" alt="Sopra" />
+            <h1>
+              We uplifted Sopra Banking Software website design system for
+              scalability, enhancing their digital presence.
+            </h1>
+          </div>
+          <div class="button">
+            <button>READ ALL OUTCOMES</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-scroll class="Section-container-4">
+      <div class="page4-context">
+        <div class="left-heading">
+          <h1>
+            Success Stories <br />
+            Shaped by Our <br />
+            User Experience <br />
+            Design Agency
+          </h1>
+        </div>
+        <div class="right-heading">
+          <h4>PARTNERSHIP MENTALITY</h4>
+          <p>
+            Along with taking the lead in designing AI-powered solutions, we
+            embody a partnership mentality. This exact commitment has been the
+            bedrock of our clients’ successes. When you choose to collaborate
+            with us, we promise to be right where your audience's changing
+            desires meet your ambitious business goals. We don't settle for
+            mediocrity; we strive for excellence in every Figma pixel, every
+            touchpoint, and every UX interaction.
+          </p>
+          <h4>RESULTS</h4>
+          <p>
+            That is how we've built 50+ sustainable startup products and
+            helped 400+ brands secure millions in funding, achieve successful
+            acquisitions, and establish themselves as globally recognized
+            companies.
+          </p>
+        </div>
+      </div>
+      <div class="labels">
+        <div class="label-box">
+          <h1>$500M</h1>
+          <span>
+            <h1>
+              In funding secured <br />
+              owning to our designs
+            </h1>
+            <p>/001</p>
+          </span>
+        </div>
+        <div class="label-box">
+          <h1>+1 million</h1>
+          <span>
+            <h1>
+              Increase <br />
+              in customer base
+            </h1>
+            <p>/002</p>
+          </span>
+        </div>
+        <div class="label-box">
+          <h1>1000 000+</h1>
+          <span>
+            <h1>Of active marketplace users</h1>
+            <p>/003</p>
+          </span>
+        </div>
+        <div class="label-box">
+          <h1>25 million</h1>
+          <span>
+            <h1>
+              Monthly <br />
+              E-commerce visits
+            </h1>
+            <p>/004</p>
+          </span>
+        </div>
+        <div class="label-box">
+          <h1>+300%</h1>
+          <span>
+            <h1>
+              Increase in sign-up <br />
+              conversion rate
+            </h1>
+            <p>/005</p>
+          </span>
+        </div>
+        <div class="label-box">
+          <h1>+43%</h1>
+          <span>
+            <h1>
+              Increase in the app's <br />
+              retention rate
+            </h1>
+            <p>/006</p>
+          </span>
+        </div>
+      </div>
+    </section>
+    <section data-scroll class="Section-container-5">
+      <div class="section_5_text_content">
+        <div class="section-part-1">
+          <h1>
+            Featured digital <br />
+            design projects
+          </h1>
+          <p>
+            Our portfolio encompasses a wide range of digital designs
+            essential for the growth of modern businesses. From B2B SaaS and
+            B2C mobile apps to marketing design for promotions, we display our
+            work created for early-stage startups and enterprises at various
+            stages of their growth.
+          </p>
+        </div>
+        <div class="section-part-2">
+          <div class="text-container">
+            <div class="text-change">
+              <div class="seeContent">
+                <button>
+                  AI <span>[2]</span>
+                </button>
+                <button>
+                  FINTECH <span>[3]</span>
+                </button>
+                <button>
+                  OTHER <span>[15]</span>
+                </button>
+                <button>
+                  WEB3 <span>[3]</span>
+                </button>
+              </div>
+              <button class="seecase">SEE ALL CASE STUDIES</button>
+            </div>
+            <div class="text-image">
+              <div id="content1" class="content active">
+                <h2>Accern. Rhea Design <br> Case Study</h2>
+                <p>Founded by Accern, a front-runner in No-Code NLP, Rhea stands as a personalized AI Associate designed
+                  to streamline FinTech workflows.</p>
+                <video class="my-video" style="margin-top: 1.5rem;" src="./src/Assets/Video/robote.mp4" muted
+                  loop></video>
+              </div>
+              <div id="content2" class="content active">
+                <h2>Pika AI Design <br> Case Study</h2>
+                <p>Pika AI is a new and better search engine that harnesses AI technology and helps people find the most
+                  relevant and interesting information from across the web.</p>
+                <video class="my-video" src="./src/Assets/Video/pika.mp4" loop muted></video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-scroll class="Section-container-6">
+      <div class="idea-container">
+        <div class="cursor-2">
+          <i class="fa-solid fa-arrow-right" id="cursor-arrow"></i>
+        </div>
+        <div class="idea-con1">
+          <h1><img src="./src/Assets/Images/owner.png">HAVE A</h1>
+          <h1>PROJECT IN MIND?
+          </h1>
+        </div>
+        <div class="idea-con2">
+          <img src="./src/Assets/Images/arrow.png" id="projectIdea1" class="Idea" alt="">
+          <i class="fa-solid fa-pen Idea" id="projectIdea2"></i>
+          <p>Share your project idea with us! Should the partnership vibe not align, we're glad to furnish you with
+            valuable insights that could prove beneficial.</p>
+        </div>
+      </div>
+    </section>
+    <section data-scroll class="Section-container-7">
+      <div class="section-7-content">
+        <h1>Digital Design Agency <br> of passionate forerunners, <br> not followers</h1>
+      </div>
+      <div class="section-7-content-2">
+        <img id="Section-7-img" src="./src/Assets/Images/rotate.png">
+        <p>The powerhouse of AI tech, creative audacity, and business mindset. We work with everything digital and help
+          you turn innovative ideas, products, services, and processes into a profitable business and then support you
+          to scale it from pre-seed to series D and beyond.</p>
+      </div>
+    </section>
+    <section data-scroll class="Section-container-8">
+      <div class="Section-8-content-container">
+
+        <div class="Section-8-left-content">
+          <div class="content-8-left-top">
+            <h5>Kirill Lazarev</h5>
+            <h5>Founder of Lazarev</h5>
+            <img src="./src/Assets/Images/comma.png" alt="">
+            <h1>Last but not least ---- we embrace <br>
+            </h1>
+            <span>
+              <h1>partnership mentality <br>
+              </h1>
+            </span>
+          </div>
+          <div class="content-8-left-bottom">
+            <p>Expect our design company to go through the hell and water of user and market research, product
+              positioning, prototyping, visual design, and user testing up to launching and IPO. Yet, we're not the type
+              to blindly follow the commands of stakeholders; instead, our product team asks unconventional</p>
+            <p>questions, not restraining ourselves to “what” but getting to “why” and seeking “how”. Our project
+              managers challenge assumptions and push the boundaries of “how it’s done” while our product designers will
+              present you with game-changing alternatives that deliver results.</p>
+          </div>
+        </div>
+        <div class="Section-8-right-content">
+          <img src="./src/Assets/Images/owner3.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section data-scroll class="Section-container-9">
+      <div class="Footer">
+        <div class="footer-top-part">
+          <h1>Have a project <br> in mind? <br> Contact Use!</h1>
+          <div class="footer-top-right">
+            <h5>LET'S CONNECT:</h5>
+            <a href="">CHECK OUR LATEST DECK</a>
+            <h5>OUR LOCATION</h5>
+            <h5>620 Mason St. <br> San Francisco, CA 94108</h5>
+          </div>
+        </div>
+        <div class="footer-bottom-part">
+          <div class="footer-ul-container">
+            <ul>
+              <h5>SHAPING <br> EXPERIENCE:</h5>
+              <li>UX Audit</li>
+              <li>UI Design</li>
+              <li>UX Design</li>
+              <li>UX Research</li>
+            </ul>
+            <ul>
+              <h5>WHERE <br> WE SHINE:</h5>
+              <li>SaaS</li>
+              <li>Web App</li>
+              <li>Mobile App</li>
+              <li>Website Design</li>
+            </ul>
+            <ul>
+              <h5>BEHIND THE <br> SCREENS:</h5>
+              <li>OUR STORY</li>
+              <li>TERMS OF SERVICES</li>
+              <li>PRIVACY POLICY</li>
+            </ul>
+            <div class="our-social-account">
+              <h5>OUR SOCIAL:</h5>
+              <a href="">LINKEDIN</a>
+              <a href="">FACEBOOK</a>
+              <a href="">INSTAGRAM</a>
+              <a href="">DRIBBLE</a>
+              <a href="">BEHANCE</a>
+            </div>
+          </div>
+          <div class="bottom-footer">
+            <h1>Ansh Chauhan. -AI+ Product Design Agency</h1>
+            <span>
+              <h1>All Right Reserved</h1>
+              <h1>&copy;2025</h1>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./script.js"></script>
+  <script src="src/Components/Section-1/Script1.js"></script>
+  <script src="src/Components/Section-2/Script2.js"></script>
+  <script src="src/Components/Section-5/Script5.js"></script>
+  <script src="src/Components/Section-6/Script6.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+.Section-container-3 {
+  width: 100%;
+  height: 100%;
+  padding: 5rem;
+  padding-top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-heading {
+  width: 100%;
+  min-width: 70%;
+}
+.client-heading > h1:nth-child(1) {
+  font-size: clamp(20px, 5vw, 8vw);
+}
+.client-heading > h1:nth-child(2) {
+  font-size: clamp(18px, 1.5vw, 5vw);
+  letter-spacing: 0.1rem;
+  margin: 2rem 0;
+}
+
+.brand-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+.shopify img {
+  width: 9rem;
+  height: 9rem;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.shopify:nth-child(3) img {
+  scale: 1.3;
+}
+.shopify:nth-child(4) img {
+  scale: 1.1;
+  width: 11rem;
+}
+.shopify h1 {
+  font-size: 1.1rem;
+  color: rgba(240, 248, 255, 0.614);
+  letter-spacing: 0.1rem;
+  margin: 0;
+  text-align: justify;
+  padding-right: 3rem;
+}
+.button {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+.button button {
+  padding: 1.4vw 8vw;
+  border-radius: 50rem;
+  border: none;
+  outline: none;
+  font-weight: 800;
+  font-size: 1vw;
+  background-color: #4854ff;
+  color: azure;
+  margin-right: 1rem;
+  transition: 0.4s all ease-in-out;
+  cursor: pointer;
+}
+.button button:hover {
+  scale: 1.1;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Section-container-3 {
+    padding: 2rem;
+    padding-top: 5rem;
+  }
+  .brand-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vw;
+    padding-left: 3vw;
+  }
+  .button button {
+    padding: 1.4vw 5vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .Section-container-3 {
+    padding: 2rem;
+    padding-top: 5rem;
+  }
+  .brand-container {
+    padding-left: 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 524px) {
+  .Section-container-3 {
+    padding: 2rem;
+    padding-top: 2rem;
+  }
+  .shopify h1 {
+    text-align: left;
+    padding-right: 0;
+  }
+}

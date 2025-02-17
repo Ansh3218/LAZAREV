@@ -1,0 +1,138 @@
+.Section-container-6 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../Assets/Images/idea.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.idea-container {
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ffffff52;
+    position: relative;
+}
+
+.idea-con1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 60%;
+}
+
+.idea-con1>h1>img {
+    width: 7vw;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.idea-con1>h1 {
+    font-size: 9vw;
+    line-height: 1;
+    font-weight: 900;
+}
+
+.idea-con2 {
+    min-height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.Idea {
+    width: 15vw;
+    transform: rotate(230deg);
+    filter: invert(1);
+    transition: 0.5s all ease-in-out;
+}
+
+#projectIdea2 {
+    display: none;
+    transform: rotate(0deg);
+    font-size: 9vw;
+    padding-top: 2.5rem;
+    padding-right: 2.5rem;
+    filter: none;
+}
+
+.idea-con2>p {
+    font-size: 1.5vw;
+    width: 70%;
+    text-align: end;
+}
+
+.cursor-2 {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-color: #0da34e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-out;
+    pointer-events: none;
+    z-index: 3333;
+}
+
+#cursor-arrow {
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media only screen and (max-width: 1024px) {
+    .cursor-2 {
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .idea-container {
+        padding: 2rem;
+    }
+}
+
+@media only screen and (max-width: 524px) {
+    .idea-container {
+        padding: 1rem;
+        flex-direction: column;
+    }
+    .cursor-2 {
+        visibility: hidden;
+    }
+    .idea-con1>h1>img {
+        width: 15vw;
+    }
+    .idea-con1>h1 {
+        font-size: 20vw;
+    }
+    .idea-con1 {
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+    }
+    .idea-con2 img,#projectIdea2{
+        visibility: hidden;
+    }
+    .idea-con2 {
+        width: 100%;
+    }
+    .idea-con2>p {
+        font-size: 5vw;
+        width: 100%;
+        text-align: left;
+    }
+}
